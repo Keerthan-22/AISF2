@@ -1,0 +1,29 @@
+{
+  "test_timestamp": "2025-08-02T11:53:01.980377",
+  "test_duration_seconds": 42.424083,
+  "overall_success": false,
+  "test_results": {
+    "dataset_integration": {
+      "benchmark_datasets": true,
+      "synthetic_data": true,
+      "validation": true,
+      "overall": true
+    },
+    "performance_monitoring": {
+      "detection_logging": true,
+      "response_logging": true,
+      "training_logging": true,
+      "validation_logging": true,
+      "summary_generation": true,
+      "overall": true
+    },
+    "scientific_artifacts": {
+      "notebooks_generated": true,
+      "artifacts_created": true,
+      "manifest_created": true,
+      "overall": true
+    },
+    "live_telemetry": {
+      "events_generated": true,
+      "responses_generated": true,
+      "success_rate_acceptable": 

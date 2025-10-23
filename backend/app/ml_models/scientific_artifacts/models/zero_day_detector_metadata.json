@@ -1,0 +1,17 @@
+{
+  "model_name": "zero_day_detector",
+  "model_type": "LSTM",
+  "datasets": [
+    "nsl_kdd",
+    "ton_iot"
+  ],
+  "performance": {
+    "accuracy": 0.9778490071726033,
+    "precision": 0.9730973899373746,
+    "recall": 0.9530666169785031,
+    "f1_score": 0.9513964403389781
+  },
+  "checksum": "67d1497eade4b25abfa81fdac29e4596f1bf677dc0ba981f79d36e369d2ccfea",
+  "timestamp": "2025-08-02T11:56:57.314006",
+  "file_size_bytes": 338
+}

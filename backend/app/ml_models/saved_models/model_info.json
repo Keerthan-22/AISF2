@@ -1,0 +1,19 @@
+{
+  "feature_names": [
+    "duration",
+    "src_bytes",
+    "dst_bytes",
+    "count",
+    "serror_rate",
+    "srv_serror_rate",
+    "rerror_rate",
+    "same_srv_rate",
+    "diff_srv_rate",
+    "dst_host_count",
+    "dst_host_srv_count"
+  ],
+  "model_path": "app/ml_models/saved_models\\simple_rf_model.pkl",
+  "encoder_path": "app/ml_models/saved_models\\label_encoder.pkl",
+  "accuracy": 0.855,
+  "trained_at": "2025-07-27T21:50:33.131758"
+}

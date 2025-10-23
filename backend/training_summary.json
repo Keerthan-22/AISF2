@@ -1,0 +1,84 @@
+{
+  "training_timestamp": "2025-07-28T14:33:23.871855",
+  "overall_accuracy": 0.7344747075441136,
+  "training_duration": 505.64904,
+  "models_trained": [
+    "threat_classifier",
+    "gmm_detector",
+    "autoencoder_detector",
+    "sequential_analyzer",
+    "response_optimizer"
+  ],
+  "load_results": {
+    "models_loaded": [
+      "threat_classifier",
+      "gmm_detector",
+      "sequential_analyzer",
+      "response_optimizer"
+    ],
+    "models_failed": [
+      "autoencoder_detector"
+    ],
+    "timestamp": "2025-07-28T14:33:21.869338"
+  },
+  "test_results": {
+    "timestamp": "2025-07-28T14:33:22.730964",
+    "tests_passed": 4,
+    "tests_failed": 1,
+    "detailed_results": {
+      "threat_classification": {
+        "status": "PASSED",
+        "prediction": "normal",
+        "confidence": 0.15111601192492732,
+        "threat_category": "Normal traffic"
+      },
+      "behavioral_anomaly": {
+        "status": "PASSED",
+        "is_anomaly": true,
+        "anomaly_score": 6.473731087814031
+      },
+      "zero_day_detection": {
+        "status": "FAILED",
+        "error": "File format not supported: filepath=models/autoencoder. Keras 3 only supports V3 `.keras` files and legacy H5 format files (`.h5` extension). Note that the legacy SavedModel format is not supported by `load_model()` in Keras 3. In order to reload a TensorFlow SavedModel as an inference-only layer in Keras 3, use `keras.layers.TFSMLayer(models/autoencoder, call_endpoint='serving_default')` (note that your `call_endpoint` might have a different name)."
+      },
+      "sequential_analysis": {
+        "status": "PASSED",
+        "pattern_type": "scanning",
+        "confidence": 0.999714195728302
+      },
+      "response_optimization": {
+        "status": "PASSED",
+        "selected_action": "isolate_host",
+        "confidence": 0.15184733271598816,
+        "effectiveness": 0.9
+      }
+    }
+  },
+  "model_status": {
+    "threat_classifier": {
+      "trained": true,
+      "model_type": "Random Forest",
+      "target_accuracy": 0.9769
+    },
+    "gmm_detector": {
+      "trained": true,
+      "model_type": "Gaussian Mixture Model",
+      "n_components": 3
+    },
+    "autoencoder_detector": {
+      "trained": true,
+      "model_type": "Autoencoder",
+      "input_dim": 41
+    },
+    "sequential_analyzer": {
+      "trained": true,
+      "model_type": "LSTM",
+      "sequence_length": 50
+    },
+    "response_optimizer": {
+      "trained": true,
+      "model_type": "PPO",
+      "action_dim": 8
+    }
+  }
+}

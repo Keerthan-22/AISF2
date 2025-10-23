@@ -1,0 +1,12 @@
+{
+  "models_loaded": 4,
+  "model_names": [
+    "random_forest",
+    "lstm",
+    "autoencoder",
+    "gradient_boosting"
+  ],
+  "accuracy": 0.95,
+  "created_at": "2025-07-27T21:50:33.133279",
+  "status": "ready"
+}

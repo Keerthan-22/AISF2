@@ -1,0 +1,17 @@
+{
+  "model_name": "threat_classifier",
+  "model_type": "RandomForest",
+  "datasets": [
+    "cicids2017",
+    "nsl_kdd"
+  ],
+  "performance": {
+    "accuracy": 0.9706995057752568,
+    "precision": 0.9716531331882605,
+    "recall": 0.9512736028750278,
+    "f1_score": 0.9664246745423707
+  },
+  "checksum": "7f22f358f2f2cec0173827f985d2e8a209b2106e5c4a3024999231ecd5921285",
+  "timestamp": "2025-08-02T11:56:57.265012",
+  "file_size_bytes": 349
+}
